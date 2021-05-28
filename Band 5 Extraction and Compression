@@ -1,0 +1,80 @@
+install.packages("raster")
+library(raster)
+
+data_path <- file.path("data_raw")
+#set relative path to data files to make easier to transfer data across co
+
+Band1984 <- raster("../data_raw/bamboo_1984.tif", band = 5)
+# to extract specifically band 5 from the bamboo_1984.tif image
+
+Band1985 <- raster("../data_raw/bamboo_1985.tif", band = 5)
+#extract band 5 from bamboo1985.tif, process repeated for all years
+
+Band1986 <- raster("../data_raw/bamboo_1986.tif", band = 5)
+
+Band1987 <- raster("../data_raw/bamboo_1987.tif", band = 5)
+
+Band1988 <- raster("../data_raw/bamboo_1988.tif", band = 5)
+
+Band1989 <- raster("../data_raw/bamboo_1989.tif", band = 5)
+
+Band1990 <- raster("../data_raw/bamboo_1990.tif", band = 5)
+
+Band1991 <- raster("../data_raw/bamboo_1991.tif", band = 5)
+
+Band1992 <- raster("../data_raw/bamboo_1992.tif", band = 5)
+
+Band1993 <- raster("../data_raw/bamboo_1993.tif", band = 5)
+
+Band1994 <- raster("../data_raw/bamboo_1994.tif", band = 5)
+
+Band1995 <- raster("../data_raw/bamboo_1995.tif", band = 5)
+
+Band1996 <- raster("../data_raw/bamboo_1996.tif", band = 5)
+
+Band1997 <- raster("../data_raw/bamboo_1997.tif", band = 5)
+
+Band1998 <- raster("../data_raw/bamboo_1998.tif", band = 5)
+
+Band1999 <- raster("../data_raw/bamboo_1999.tif", band = 5)
+
+Band2000 <- raster("../data_raw/bamboo_2000.tif", band = 5)
+
+Band2001 <- raster("../data_raw/bamboo_2001.tif", band = 5)
+
+Band2002 <- raster("../data_raw/bamboo_2002.tif", band = 5)
+
+Band2003 <- raster("../data_raw/bamboo_2003.tif", band = 5)
+
+Band2004 <- raster("../data_raw/bamboo_2004.tif", band = 5)
+
+Band2005 <- raster("../data_raw/bamboo_2005.tif", band = 5)
+
+Band2006 <- raster("../data_raw/bamboo_2006.tif", band = 5)
+
+Band2007 <- raster("../data_raw/bamboo_2007.tif", band = 5)
+
+Band2008 <- raster("../data_raw/bamboo_2008.tif", band = 5)
+
+Band2009 <- raster("../data_raw/bamboo_2009.tif", band = 5)
+
+Band2010 <- raster("../data_raw/bamboo_2010.tif", band = 5)
+
+Band2011 <- raster("../data_raw/bamboo_2011.tif", band = 5)
+
+Band2012 <- raster("../data_raw/bamboo_2012.tif", band = 5)
+
+Band2013 <- raster("../data_raw/bamboo_2013.tif", band = 5)
+
+Band2014 <- raster("../data_raw/bamboo_2014.tif", band = 5)
+
+Band2015 <- raster("../data_raw/bamboo_2015.tif", band = 5)
+
+Band2016 <- raster("../data_raw/bamboo_2016.tif", band = 5)
+
+Band2017 <- raster("../data_raw/bamboo_2017.tif", band = 5)
+
+Band2018 <- raster("../data_raw/bamboo_2018.tif", band = 5)
+
+MergedBamboo <- merge(Band1984, Band1985, Band1986, Band1987, Band1988, Band1989, Band1990, Band1991, Band1992, Band1993, Band1994, Band1995, Band1996, Band1997, Band1998, Band1999, Band2000, Band2001, Band2002, Band2003, Band2004, Band2005, Band2006, Band2007, Band2008, Band2009, Band2010, Band2011, Band2012, Band2013, Band2014, Band2015, Band2016, Band2017, Band2018)
+#merges all bands into one file
